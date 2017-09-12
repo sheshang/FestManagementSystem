@@ -1,0 +1,51 @@
+
+  <%= stylesheet_link_tag    'welcomeindex', media: 'all', 'data-turbolinks-track' => true %>
+
+    <div id="main-container" class="container-fluid">
+
+      <div class="row">
+
+        <div class="jumbotron col-lg-8 col-md-12"  style="background-color:green;">
+        </div>
+
+        <div class="jumbotron col-lg-4 col-md-12" style="background-color:red;">
+          <nav class="navbar navbar-light bg-light">
+            <div class="navbar-header">
+              <a href="#" class="navbar-brand">Brand</a>
+            </div>
+            <div id="navbarCollapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown show">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#" id="CategoryDD" aria-haspopup="true" aria-expanded="false">Messages <b class="caret"></b></a>
+                  <ul class="dropdown-menu" aria-labelledby="CategoryDD">
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Drafts</a></li>
+                    <li><a href="#">Sent Items</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Trash</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <footer class="footer navbar-fixed-bottom">
+          <div class="container">
+
+            <div class="d-flex justify-content-between">
+              <span class="btn btn-light text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i>.</span>
+              <span class="btn btn-light">
+                  <span><%= link_to 'About Us', about_us_index_path, :class => "" %></span>
+                  <span><%= link_to 'Feedback', feedback_new_path , :class => "" %></span>
+              </span>
+            </div>
+
+
+
+          </div>
+        </footer>
+
+      </div>
+
+    </div>
