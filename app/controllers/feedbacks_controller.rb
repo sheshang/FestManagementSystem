@@ -1,4 +1,5 @@
 class FeedbacksController < ApplicationController
+  layout "front_layout", only: [:new]
 
   def index
     @feedbacks = Feedback.all

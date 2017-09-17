@@ -1,0 +1,115 @@
+<%= stylesheet_link_tag    'welcomeindex', media: 'all', 'data-turbolinks-track' => true %>
+<%= javascript_include_tag 'welcomeindex' %>
+
+<div id="front-container" class="container-fluid">
+
+  <div class="row">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light" >
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="container nav navbar-nav d-flex justify-content-between">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="EventsDD" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
+              Event
+            </a>
+            <div class="dropdown-menu" aria-labelledby="EventsDD">
+              <div class="nav-item dropdown dropdown-submenu">
+                <a href="javascript:void(0)" class="nav-link dropdown-toggle" id="SubDD1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="SubDD1">
+                  <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown dropdown-submenu">
+                <a href="javascript:void(0)" class="nav-link dropdown-toggle" id="SubDD2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="SubDD2">
+                  <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                </div>
+              </div>
+              <div class="nav-item dropdown dropdown-submenu">
+                <a href="javascript:void(0)" class="nav-link dropdown-toggle" id="SubDD3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="SubDD3">
+                  <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="WorkshopsDD" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
+              Workshop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="WorkshopsDD">
+              <a class="dropdown-item" href="javascript:void(0)">Action</a>
+              <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+              <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+              <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <%= link_to root_path, :class => "btn btn-dark btn-circle onCollapseA" do %>
+              <i class="fa fa-home fa-2x" ></i>
+            <% end %>
+
+            <%= link_to 'Home', root_path , :class => "nav-link onCollapseB" %>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="SeminarsDD" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
+              Seminar
+            </a>
+            <div class="dropdown-menu" aria-labelledby="SeminarsDD">
+              <a class="dropdown-item" href="javascript:void(0)">Action</a>
+              <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+              <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+              <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="InformalsDD" data-toggle="dropdown" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">
+              Informal
+            </a>
+            <div class="dropdown-menu" aria-labelledby="InformalsDD">
+              <a class="dropdown-item" href="javascript:void(0)">Action</a>
+              <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+              <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+              <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div  id="content-container" class="content container-fluid" style="margin: 40px auto 38px auto">
+
+      <%= yield %>
+
+    </div>
+
+    <footer class="footer navbar-fixed-bottom">
+
+      <div class="container-fluid d-flex justify-content-between">
+        <span class="btn text-muted">Made with
+          <i class="fa fa-heart" aria-hidden="true"></i>.</span>
+        <span class="btn">
+          <span><%= link_to 'About Us', about_us_index_path, :class => "link-unstyle" %></span>
+          <span><%= link_to 'Feedback', new_feedback_path , :class => "link-unstyle" %></span>
+        </span>
+      </div>
+
+    </footer>
+
+  </div>
+
+</div>

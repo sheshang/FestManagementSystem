@@ -15,7 +15,7 @@
  */
 
  .jumbotron{
-  height: 100vh;
+  height: calc(100vh - 78px);
   min-height: calc(100vh - 155px);
   //overflow: hidden;
 }
@@ -30,11 +30,11 @@
     height: 100%;
   }
 
-  div.jumbotron.col-lg-2.col-md-12{
-    padding: 2rem 1rem;
-  }
 }
 
+div.jumbotron.col-lg-2.col-md-12{
+  padding: 2rem 1rem;
+}
 
 .footer {
     position: fixed;
