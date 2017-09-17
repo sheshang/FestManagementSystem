@@ -30,7 +30,11 @@
     height: 100%;
   }
 
+  div.jumbotron.col-lg-2.col-md-12{
+    padding: 2rem 1rem;
+  }
 }
+
 
 .footer {
     position: fixed;
@@ -39,11 +43,120 @@
     //height: 56px;
     //line-height: 56px;
     background-color: #f5f5f5;
+}
 
-  .container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
+.navbar{
+  padding: 0px;
+}
 
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+
+}
+
+.btn-circle:hover,
+.btn-circle:focus{
+  box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.4);
+  border: 1px solid white;
+}
+
+@media (min-width: 768px){
+  .onCollapseA{
+    display: inherit;
   }
+  .onCollapseB{
+    display: none;
+  }
+
+  .navbar-nav{
+    height: 40px;
+  }
+}
+
+@media (max-width: 767px){
+  .onCollapseA{
+    display: none;
+  }
+  .onCollapseB{
+    display: inherit;
+  }
+}
+
+//---------------------for nested dropdown---------
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.nav-link {
+  //this all is css of dwropdown-item. but as submenu is navlink it css of dropdwon header, i have to give it externally
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem !important;
+  clear: both;
+  font-weight: normal;
+  color: #212529 !important;
+  text-align: inherit;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>.dropdown-toggle::after{
+  content: none;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+.link-unstyle{
+  color: rgba(0,0,0,0.5);
+  margin: 0px 5px;
+}
+
+.link-unstyle:hover,
+.link-unstyle:focus{
+  color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+
+.updates{
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+#newsFlash{
+  color: red;
 }

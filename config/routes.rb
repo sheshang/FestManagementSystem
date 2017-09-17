@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  #get 'feedback/new'
 
-  resources :demos
-  get 'feedback/new' #(due to mistake, mostly not needed, still keeping for future erroes)
+  #resources :demos
+
+  resources :feedbacks
 
   get 'about_us/index'
 

@@ -1,0 +1,23 @@
+<h1>All Feedbacks</h1>
+
+<table>
+
+  <tr>
+    <th>Message</th>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+
+  <% @feedbacks.each do |feedback| %>
+
+    <tr>
+      <td><%= feedback.message %></td>
+      <td><%= feedback.name %></td>
+      <td><%= feedback.email %></td>
+
+    </tr>
+  <% end %>
+
+
+
+</table>
