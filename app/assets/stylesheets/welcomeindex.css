@@ -32,6 +32,13 @@
 
 }
 
+@media (min-width: 992px){
+
+  #content-container{
+    height: 572px;
+  }
+}
+
 div.jumbotron.col-lg-2.col-md-12{
   padding: 2rem 1rem;
 }
@@ -159,4 +166,31 @@ div.jumbotron.col-lg-2.col-md-12{
 
 #newsFlash{
   color: red;
+}
+
+.holder {
+  //background-color:#ccc;
+  width:inherit;
+  height:100%;
+  overflow:hidden;
+  //padding:10px;
+  font-family:Helvetica;
+}
+.holder .mask {
+  position: relative;
+  left: 0px;
+  top: 10px;
+  width:300px;
+  height:inherit;
+  overflow: hidden;
+}
+.holder ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.holder ul li {
+  //padding:10px 0px;
+  margin-bottom: 10px;
 }

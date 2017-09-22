@@ -4,7 +4,22 @@
 
     <div class="jumbotron col-lg-2 col-md-12">
 
-      <div id="newsFlash" class="updates" role="alert">NEWS</div>
+      <div id="newsFlash" class="updates">NEWS</div>
+
+        <div class="holder">
+          <ul id="newsPosts" class="">
+            <%#= it will go in loop manner %>
+            <% for i in 0..5 do %>
+                <li class="card">
+                  <div class="card-body">
+                     Here update will go
+                  </div>
+                </li>
+            <% end %>
+          </ul>
+        </div>
+
+      </div>
 
     </div>
 
