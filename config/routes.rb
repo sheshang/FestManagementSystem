@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   #resources :demos
 
   resources :feedbacks
+  resources :news
+
+  post 'news/new'
 
   get 'about_us/index'
 

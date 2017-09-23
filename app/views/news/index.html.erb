@@ -1,0 +1,21 @@
+<h1>All News</h1>
+
+<table>
+
+  <tr>
+    <th>Message</th>
+    <th>Date</th>
+  </tr>
+
+  <% @news.each do |news| %>
+
+    <tr>
+      <td><%= news.message %></td>
+      <td><%= news.created_at.strftime('%m/%d/%Y') %></td>
+
+    </tr>
+  <% end %>
+
+
+
+</table>
